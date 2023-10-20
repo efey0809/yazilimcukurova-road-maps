@@ -35,6 +35,8 @@ int main(){
         }
 	
 	printf("\n\tRandom numbers genareted\n");
+
+	fclose(fptr);
 	
 	b=ctr;
 
@@ -67,7 +69,9 @@ int main(){
                 fprintf(fptr2, "%d\n", sy[ctr].x);
         }
 
-        printf("\n\tRandom numbers sorted\n");
+	printf("\n\tRandom numbers sorted\n");
+
+	fclose(fptr2);
 
 	return 0;
 }
